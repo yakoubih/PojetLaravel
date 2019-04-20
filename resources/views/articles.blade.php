@@ -11,9 +11,9 @@
 <!--<h3>Awesome blog post title <small>3/6/2015</small></h3>-->
 <img class="thumbnail" src="https://placehold.it/850x350">
 
-<div class="callout">
+<div style = "width: 860px; margin-bottom: 42px;"class="list-group-item container jumbotron">
 <ul class="menu simple">
-<li><a href="#">{{ $post->post_title }}</a></li>
+<li><a  href="articles/{{$post->post_name}}">{{ $post->post_title }}</a></li>
 <li><a href="#">Comments: 3</a></li>
 </ul>
 </div>

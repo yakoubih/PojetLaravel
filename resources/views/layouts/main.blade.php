@@ -9,25 +9,25 @@
 </head>
 <body>
 
-<div class="top-bar">
-<div class="top-bar-left">
-<ul class="menu">
+<div class="top-bar" style="background-color:gray">
+<div class="top-bar-left" >
+<ul class="menu" style="background-color:gray">
 <!--<li class="menu-text">Blog</li>-->
-<li><a href="/">Home</a></li>
-<li><a href="/articles">Articls</a></li>
-<li><a href="/contact">Contact</a></li>
-<li><a href="/help">help</a></li>
+<li><a href="/" style="color: white">Home</a></li>
+<li><a href="/articles" style="color: white">Articls</a></li>
+<li><a href="/contact" style="color: white">Contact</a></li>
+<li><a href="/help" style="color: white" >help</a></li>
 </ul>
 </div>
 <div class="row top-bar-right">
-<li style="list-style: none;padding-right: 20px;"><a href="/subscribe">Subscribe</a></li>
-<li style="list-style: none;"><a href="/login">login</a></li>
+<li style="list-style: none;padding-right: 20px;"><a href="/subscribe" style="color: white">Subscribe</a></li>
+<li style="list-style: none;"><a href="/login" style="color: white">login</a></li>
 </div>
 </div>
 
-<div class="callout large primary text-center" style="height:20%;background-color:gray">
+<div class="callout large primary text-center" style="height:20%;background-color:gray; color: white;margin-top: 19px">
 <div class="row column text-center">
-<h1></h1>
+<h1 class=" container text-center">one two three ;)</h1>
 
 </div>
 </div>

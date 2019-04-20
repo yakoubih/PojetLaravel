@@ -1,8 +1,8 @@
 @extends('layouts/main')
 @section('content')
-<h1>Contactez nous</h1>
+<h1 class=" container text-center">nous contacter</h1>
 
-<div class=" container jumbotron text-center">
+<div class=" container jumbotron text-center" style="background-color: gray;width:890px">
                     <form action="{{ url('/contact') }}" method="POST" novalidate>
                         {{ csrf_field() }}
                         <div class="form-group">
@@ -16,7 +16,7 @@
                         <div class="form-group ">
                             <textarea class="form-control {{ $errors->has('contact_message') ? 'is-invalid' : '' }}" name="contact_message" id="contact_message" placeholder="Votre message">{{ old('contact_message') }}</textarea>                            {!! $errors->first('contact_message', '<div class="invalid-feedback has-error">:message</div>') !!}
                         </div>
-                        <button type="submit" class="btn btn-secondary">Envoyer !</button>
+                        <button type="submit" class="btn btn-secondary" style="color: white">Envoyer !</button>
                     </form>
 </div>
 

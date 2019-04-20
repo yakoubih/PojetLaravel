@@ -1,6 +1,9 @@
 @extends('layouts/main')
 @section('content')
-<h1>nous avons bien reçus votre message,nous vous ferrons un reour dans les plus bref délais possible<br>Merci à bientot </h1>
+<script type="text/javascript">
+	alert("Etes-vous sure de votre message?")
+</script>
+<h1>Nous avons bien reçu votre requête et allons vous répondre dans les plus bref delais<br>Merci à bientot !  </h1>
 
 
 @endsection

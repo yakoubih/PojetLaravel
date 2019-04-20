@@ -2,11 +2,13 @@
 @section('content')
 
 <h1>Articles</h1>
+
 <div class="jumbotron container text-center">
+<h3>Awesome blog post title <small>3/6/2015</small></h3>
   @foreach ( $post as $post )
   <li> {{ $post->post_title }} </li>
 <div class="blog-post">
-<h3>Awesome blog post title <small>3/6/2015</small></h3>
+<!--<h3>Awesome blog post title <small>3/6/2015</small></h3>-->
 <img class="thumbnail" src="https://placehold.it/850x350">
 
 <div class="callout">

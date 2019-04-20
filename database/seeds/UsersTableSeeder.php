@@ -15,5 +15,13 @@ class UsersTableSeeder extends Seeder
            $user->posts()->save(factory(App\Post::class)->create());
        });
 
+
+           factory(App\Post::class, 10)->create()->each(function ($post) {
+           $post->comments()->save(factory(App\Comment::class)->create());
+       });
+
     }
+
+
+
 }

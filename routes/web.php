@@ -23,6 +23,6 @@ Route::get('/articles/{post_name}', 'ArticlesController@show');
 Route::get('/contact','ContactController@create'); //pour demander le formulaire
 Route::post('/contact', 'ContactController@store'); //pour soumettre le formulaire 
 
-Route::get('/help', 'ContactController@help'); //pour soumettre le formulaire 
-//Route::get('/help/', 'ContactController@create');// pour passe de email -> contacte
-//{!! $errors->first('nom', '<div class="invalid-feedback">:message</div>') !!}
+Route::get('/help', 'ContactController@help'); 
+
+Route::post('/articles', 'CommentController@store'); //pour soumettre le commentaire

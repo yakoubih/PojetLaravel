@@ -14,9 +14,9 @@
 <div class="list-group-item container jumbotron" style = "width: 860px; margin-bottom: 42px;background-color: gray;">
 <ul class="menu simple">
 <li><a  href="articles/{{$post->post_name}}" style="color: white">{{ $post->post_title }}</a></li>
-<li><a href="#" style="color: white">Comments: 3</a></li>
+<li><a href="#" style="color: white"> Comments: 3</a></li>
 
-                    <form action="{{ url('/comment') }}" method="POST" novalidate>
+                    <form action="{{ url('/articles') }}" method="POST" novalidate>
                         {{ csrf_field() }}
                         <div class="form-group">
                             <input type="text" class="form-control {{ $errors->has('comment_name') ? 'is-invalid' : '' }}" name="comment_name" id="comment_name" placeholder="Votre nom"

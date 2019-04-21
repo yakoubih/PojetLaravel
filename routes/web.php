@@ -26,3 +26,6 @@ Route::post('/contact', 'ContactController@store'); //pour soumettre le formulai
 Route::get('/help', 'ContactController@help'); 
 
 Route::post('/articles', 'CommentController@store'); //pour soumettre le commentaire
+Auth::routes();
+
+Route::get('/home', 'LoginController@index')->name('home');

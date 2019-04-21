@@ -20,8 +20,8 @@
 </ul>
 </div>
 <div class="row top-bar-right">
-<li style="list-style: none;padding-right: 20px;"><a href="/subscribe" style="color: white">Subscribe</a></li>
-<li style="list-style: none;"><a href="/login" style="color: white">login</a></li>
+<li style="list-style: none;padding-right: 20px;"><a href="/register" style="color: white">Subscribe</a></li>
+<li style="list-style: none;"><a href="/login" style="color: white">Login</a></li>
 </div>
 </div>
 

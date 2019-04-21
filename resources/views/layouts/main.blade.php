@@ -14,9 +14,9 @@
 <ul class="menu" style="background-color:gray">
 <!--<li class="menu-text">Blog</li>-->
 <li><a href="/" style="color: white">Home</a></li>
-<li><a href="/articles" style="color: white">Articls</a></li>
+<li><a href="/articles" style="color: white">Articles</a></li>
 <li><a href="/contact" style="color: white">Contact</a></li>
-<li><a href="/help" style="color: white" >help</a></li>
+<li><a href="/help" style="color: white" >Help</a></li>
 </ul>
 </div>
 <div class="row top-bar-right">
@@ -27,7 +27,7 @@
 
 <div class="callout large primary text-center" style="height:20%;background-color:gray; color: white;margin-top: 19px">
 <div class="row column text-center">
-<h1 class=" container text-center">one two three ;)</h1>
+<h1 class=" container text-center">Notre Bloc Laravel</h1>
 
 </div>
 </div>

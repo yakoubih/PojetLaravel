@@ -21,16 +21,12 @@ class ContactController extends Controller
         $contact->contact_date = date('Y-m-d H:i:s');
         $contact->save();
 
-        return view('contact.confirm');
+        $contacts = \App\Contact::all();
+        return view('contact.confirm',array('contacts' => $contacts));
 	}
 
  public function help() {
         return view('help');
     }
-
-
-
-
-
 
 }

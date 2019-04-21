@@ -1,6 +1,6 @@
 @extends('layouts/main')
 @section('content')
-<h1 class=" container text-center">nous contacter</h1>
+<h1 class=" container text-center">Contactez Nous</h1>
 
 <div class=" container jumbotron text-center" style="background-color: gray;width:890px">
                     <form action="{{ url('/contact') }}" method="POST" novalidate>

@@ -14,8 +14,11 @@
 </style>
 
 <script type="text/javascript">
-	alert("Confirmer l'envoi?")
+	alert("Etes-vous sure de votre message?")
 </script>
+
+<h1 style="text-align: center">Nous avons bien reçu votre demande et allons vous répondre dans les plus bref delais<br>Merci à bientot !  </h1>
+
 
 <h3>Nous avons bien reçu votre demande et nous allons vous répondre dans les plus bref delais <br>Merci à bientot !</h3>
 <h4><li>Liste des messages envoyés :</li></h4>

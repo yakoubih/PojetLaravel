@@ -18,6 +18,8 @@
 Route::get('/', 'HomeController@index');
 Route::get('/articles', 'ArticlesController@index');
 Route::get('/articles/{post_name}', 'ArticlesController@show');
+
+
 //Route::get('/contact','ContactController@index');
 
 Route::get('/contact','ContactController@create'); //pour demander le formulaire
@@ -29,3 +31,4 @@ Route::post('/articles', 'CommentController@store'); //pour soumettre le comment
 Auth::routes();
 
 Route::get('/home', 'LoginController@index')->name('home');
+Route::post('/articles/update', 'ArticlesController@update'); // mettre à jour les changement effectués sur les articles

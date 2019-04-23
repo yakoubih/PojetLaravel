@@ -16,4 +16,20 @@ public function show($post_name) {
    return view('posts_single',array('post' => $post));
 }
 
+
+
+  public function update(Request $request)
+    {
+    	$id = $request->input('id');
+    	//$author = $request->input('author');
+    	$content = $request->input('content');
+
+       	$post = \App\Post::find($id);
+		//$post->post_author = $author;
+		$post->post_content = $content;
+
+		$post->save();
+		
+		return redirect()->action('ArticlesController@index');    
+	}
 }

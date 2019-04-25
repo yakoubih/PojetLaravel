@@ -1,6 +1,6 @@
 # Titre du projet
 
-Un paragraphe de la description du projet va ici
+Projet de création d’une application web avec le framework PHP Laravel
 
 ## Commencer
 
@@ -8,26 +8,27 @@ Ces instructions vous fourniront une copie du projet opérationnel sur votre ord
 
 ### Conditions préalables
 
-De quoi avez-vous besoin pour installer le logiciel et comment les installer?
+De quoi avez-vous besoin pour installer le logiciel et comment l'installer?
 
 `` `
-Donne des exemples
+Vous devez avoir une version >= PHP 7.2.10
 `` `
 
 ### Installation
 
-Une série d'exemples pas à pas qui vous expliquent comment faire fonctionner un environnement de développement
+Pour installer le projet sur votre machine il faut suivre les étapes suivantes : 
 
-Dites quel sera le pas
-
-`` `
-Donner l'exemple
-`` `
-
-Et répétez
+1- Télacharger le projet sur votre ordinateur ou vous pouvez cloner le projet en tapant la commande suivante sur le Terminal ou l'Invité de commande selon votre systéme d'exploitation (Windows ou Lunix) si vous avez Git installé sur votre ordinateur.
 
 `` `
-jusqu'à la fin
+git clone https://github.com/yakoubih/PojetLaravel.git
+`` `
+
+2- Une fois le projet est copié, ouvrez le et ouvrez le Terminal ou l'Invité de commande (selon votre systéme d'exploitation).
+3- Installer composer dans le projet en tappant la commande suivante dans le Terminal/Invité de commande ouvert
+
+`` `
+php composer install
 `` `
 
 Terminez avec un exemple d'extraction de données du système ou d'utilisation pour une petite démonstration.

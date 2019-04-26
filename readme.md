@@ -1,71 +1,113 @@
-<p align="center"><img src="https://laravel.com/assets/img/components/logo-laravel.svg"></p>
+# Titre du projet
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/d/total.svg" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/v/stable.svg" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
-</p>
+Projet de création d’une application web avec le framework PHP Laravel
 
-## About Laravel
+## Commencer
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+Ces instructions vous fourniront une copie du projet opérationnel sur votre ordinateur local à des fins de développement et de test. Voir le déploiement pour des notes sur la manière de déployer le projet sur un système actif.
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+### Conditions préalables
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+De quoi avez-vous besoin pour installer le logiciel et comment l'installer?
 
-## Learning Laravel
+```
+Vous devez avoir une version >= PHP 7.2.10
+```
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+### Installation
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 1100 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost you and your team's skills by digging into our comprehensive video library.
+Pour installer le projet sur votre machine il faut suivre les étapes suivantes : 
 
-## Laravel Sponsors
+1- Télacharger le projet sur votre ordinateur ou vous pouvez cloner le projet en tapant la commande suivante sur le Terminal ou l'Invité de commande selon votre systéme d'exploitation (Windows ou Lunix) si vous avez Git installé sur votre ordinateur.
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+```
+git clone https://github.com/yakoubih/PojetLaravel.git
+```
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[British Software Development](https://www.britishsoftware.co)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- [UserInsights](https://userinsights.com)
-- [Fragrantica](https://www.fragrantica.com)
-- [SOFTonSOFA](https://softonsofa.com/)
-- [User10](https://user10.com)
-- [Soumettre.fr](https://soumettre.fr/)
-- [CodeBrisk](https://codebrisk.com)
-- [1Forge](https://1forge.com)
-- [TECPRESSO](https://tecpresso.co.jp/)
-- [Runtime Converter](http://runtimeconverter.com/)
-- [WebL'Agence](https://weblagence.com/)
-- [Invoice Ninja](https://www.invoiceninja.com)
-- [iMi digital](https://www.imi-digital.de/)
-- [Earthlink](https://www.earthlink.ro/)
-- [Steadfast Collective](https://steadfastcollective.com/)
-- [We Are The Robots Inc.](https://watr.mx/)
-- [Understand.io](https://www.understand.io/)
-- [Abdel Elrafa](https://abdelelrafa.com)
+2- Une fois le projet est copié, ouvrez le et ouvrez le Terminal ou l'Invité de commande (selon votre systéme d'exploitation).
+3- Installer composer dans le projet en tappant la commande suivante dans le Terminal/Invité de commande ouvert
 
-## Contributing
+```
+php composer install
+```
+4- Copier le fichier .env.example dans .env en tappant la commande suivante:
+   a- Sous Lunix
+```
+Copy .env.example .env
+```
+   b- Sous Windows
+```
+Cp .env.example .env
+```
+5- Ouvrez le fichier .env et changer le nom de la base de donnée
+6- Dans le Terminal/Invité de commande lancez la commande suivante 
+```
+php artisan key:generate
+```
+7- Lancez les migration en tappant la commande suivante 
+```
+php artisan migrate
+```
+8- Remplissez les tables de la base de données par des données aléatoires en tappant la commande suivante
+```
+php artisan migrate:fresh --seed -v
+```
+8- Lancez le serveur pour tester l'application en tappant la commande suivante
+```
+php artisan serve
+```
+Terminez avec un exemple d'extraction de données du système ou d'utilisation pour une petite démonstration.
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+## Lancer les tests
 
-## Security Vulnerabilities
+Expliquer comment exécuter les tests automatisés pour ce système
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+### Décomposer en tests de bout en bout
 
-## License
+Expliquez ce que ces tests testent et pourquoi
 
-The Laravel framework is open-source software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+`` `
+Donne un exemple
+`` `
+
+### Et tests de style de codage
+
+Expliquez ce que ces tests testent et pourquoi
+
+`` `
+Donne un exemple
+`` `
+
+## Déploiement
+
+Ajouter des notes supplémentaires sur la façon de déployer ceci sur un système actif
+
+## Construit avec
+
+* [Dropwizard] (http://www.dropwizard.io/1.0.2/docs/) - Le cadre Web utilisé
+* [Maven] (https://maven.apache.org/) - Gestion des dépendances
+* [ROME] (https://rometools.github.io/rome/) - Utilisé pour générer des flux RSS
+
+## Contribuant
+
+Veuillez consulter [CONTRIBUTING.md] (https://gist.github.com/PurpleBooth/b24679402957c63ec426) pour obtenir des détails sur notre code de conduite et sur le processus de soumission des demandes d'extraction.
+
+## Versioning
+
+Nous utilisons [SemVer] (http://semver.org/) pour la gestion des versions. Pour les versions disponibles, voir les [balises sur ce référentiel] (https://github.com/your/project/tags).
+
+## Auteurs
+
+* ** Hamza DERDJINI ** - * Travail initial * - [Hamza] (https://www.linkedin.com/in/hamza-derdjini-b8a827122/)
+
+Voir aussi la liste des [contributeurs] (https://github.com/your/project/contributors) ayant participé à ce projet.
+
+## Licence
+
+Ce projet est sous licence MIT - voir le fichier [LICENSE.md] (LICENSE.md) pour plus de détails.
+
+## Remerciements
+
+* Astuce de chapeau à toute personne dont le code a été utilisé
+* Inspiration
+* etc

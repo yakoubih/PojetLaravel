@@ -122,16 +122,14 @@ Nous utilisons [SemVer] (http://semver.org/) pour la gestion des versions. Pour 
 
 ## Auteurs
 
-* ** Hamza DERDJINI ** - * Travail initial * - [Hamza] (https://www.linkedin.com/in/hamza-derdjini-b8a827122/)
+* **Hamza DERDJINI**  [LinkedinHamza](https://www.linkedin.com/in/hamza-derdjini-b8a827122/)
+                      [GithubHamza](https://github.com/geekhamza)
+* **Hocine YAKOUBI**  [GithubHocine](https://github.com/yakoubih)
 
-Voir aussi la liste des [contributeurs] (https://github.com/your/project/contributors) ayant participé à ce projet.
 
 ## Licence
 
-Ce projet est sous licence MIT - voir le fichier [LICENSE.md] (LICENSE.md) pour plus de détails.
-
+Ce projet est réalisé dans le cadre de la formation Laravel (Master 2 DCISS Grenoble) 
 ## Remerciements
 
-* Astuce de chapeau à toute personne dont le code a été utilisé
-* Inspiration
-* etc
+* On vous remercie pour vos explications

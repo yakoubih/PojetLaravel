@@ -10,9 +10,9 @@ Ces instructions vous fourniront une copie du projet opérationnel sur votre ord
 
 De quoi avez-vous besoin pour installer le logiciel et comment l'installer?
 
-`` `
+```
 Vous devez avoir une version >= PHP 7.2.10
-`` `
+```
 
 ### Installation
 
@@ -20,17 +20,42 @@ Pour installer le projet sur votre machine il faut suivre les étapes suivantes 
 
 1- Télacharger le projet sur votre ordinateur ou vous pouvez cloner le projet en tapant la commande suivante sur le Terminal ou l'Invité de commande selon votre systéme d'exploitation (Windows ou Lunix) si vous avez Git installé sur votre ordinateur.
 
-`` `
+```
 git clone https://github.com/yakoubih/PojetLaravel.git
-`` `
+```
 
 2- Une fois le projet est copié, ouvrez le et ouvrez le Terminal ou l'Invité de commande (selon votre systéme d'exploitation).
 3- Installer composer dans le projet en tappant la commande suivante dans le Terminal/Invité de commande ouvert
 
-`` `
+```
 php composer install
-`` `
-
+```
+4- Copier le fichier .env.example dans .env en tappant la commande suivante:
+   a- Sous Lunix
+```
+Copy .env.example .env
+```
+   b- Sous Windows
+```
+Cp .env.example .env
+```
+5- Ouvrez le fichier .env et changer le nom de la base de donnée
+6- Dans le Terminal/Invité de commande lancez la commande suivante 
+```
+php artisan key:generate
+```
+7- Lancez les migration en tappant la commande suivante 
+```
+php artisan migrate
+```
+8- Remplissez les tables de la base de données par des données aléatoires en tappant la commande suivante
+```
+php artisan migrate:fresh --seed -v
+```
+8- Lancez le serveur pour tester l'application en tappant la commande suivante
+```
+php artisan serve
+```
 Terminez avec un exemple d'extraction de données du système ou d'utilisation pour une petite démonstration.
 
 ## Lancer les tests
@@ -73,7 +98,7 @@ Nous utilisons [SemVer] (http://semver.org/) pour la gestion des versions. Pour 
 
 ## Auteurs
 
-* ** Billie Thompson ** - * Travail initial * - [PurpleBooth] (https://github.com/PurpleBooth)
+* ** Hamza DERDJINI ** - * Travail initial * - [Hamza] (https://www.linkedin.com/in/hamza-derdjini-b8a827122/)
 
 Voir aussi la liste des [contributeurs] (https://github.com/your/project/contributors) ayant participé à ce projet.
 

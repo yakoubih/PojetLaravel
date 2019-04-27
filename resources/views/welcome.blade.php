@@ -3,7 +3,7 @@
 <h1 class=" container text-center">Home</h1>
 <div class="container text-center">
 <ul class="list-group">
-	  <h3>Awesome blog post title <small>3/6/2015</small></h3>
+	  <h3>Awesome blog post title <small> <?php echo (date('Y-m-d H:i:s')) ?> </small></h3>
       @foreach ( $posts as $post )
       <div class="blog-post" >
       <!--<h3>Awesome blog post title <small>3/6/2015</small></h3>-->
@@ -14,7 +14,6 @@
 
 </ul>
        @endforeach
-
 </div>
 </div>
 @endsection

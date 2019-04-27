@@ -6,14 +6,14 @@ use Illuminate\Database\Eloquent\Model;
 
 class Comment extends Model
 {
-     protected $table = 'comment';
+     protected $table = 'comments';
      public $timestamps = false;
 
 
 
    public function author()
    {
-       return $this->belongsTo('App\Post','post_author');
+       return $this->belongsTo('App\Post','post_id');
    }
 
 }

@@ -12,7 +12,8 @@ use Faker\Generator as Faker;
 |
 */
 $factory->define(App\Comment::class, function (Faker $faker) {
-    $comments = App\comment::pluck('id')->toArray();
+    $comments = App\Comment::pluck('id')->toArray();
+    $posts = App\Post::pluck('id')->toArray();
     return [      
         'post_id' => $faker->randomElement($posts),
         'comment_name' => $faker->word(),

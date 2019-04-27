@@ -45,19 +45,19 @@ DB_DATABASE=Votre chemin\PojetLaravel-master\database\database.sqlite
 #DB_USERNAME=homestead
 #DB_PASSWORD=secret
 ```
-6- Dans le Terminal/Invité de commande lancez la commande suivante 
+7- Dans le Terminal/Invité de commande lancez la commande suivante 
 ```
 php artisan key:generate
 ```
-7- Lancez les migration en tappant la commande suivante 
+8- Lancez les migration en tappant la commande suivante 
 ```
 php artisan migrate
 ```
-8- Remplissez les tables de la base de données par des données aléatoires en tappant la commande suivante
+9- Remplissez les tables de la base de données par des données aléatoires en tappant la commande suivante
 ```
 php artisan migrate:fresh --seed -v
 ```
-8- Lancez le serveur pour tester l'application en tappant la commande suivante
+10- Lancez le serveur pour tester l'application en tappant la commande suivante
 ```
 php artisan serve
 ```

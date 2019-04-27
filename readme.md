@@ -28,25 +28,20 @@ git clone https://github.com/yakoubih/PojetLaravel.git
 3- Installer composer dans le projet en tappant la commande suivante dans le Terminal/Invité de commande ouvert
 
 ```
-php composer install
+composer install
 ```
 4- Copier le fichier .env.example dans .env en tappant la commande suivante:
-   a- Sous Lunix
 ```
-Copy .env.example .env
-```
-   b- Sous Windows
-```
-Cp .env.example .env
+copy .env.example .env
 ```
 5- Créez un fichier database.sqlite dans le répertoire database du projet récuperé
 
-5- Ouvrez le fichier .env et faites les modification suivantes.
+6- Ouvrez le fichier .env et faites les modification suivantes.
 ```
 DB_CONNECTION=sqlite
 #DB_HOST=127.0.0.1
 #DB_PORT=3306
-DB_DATABASE=Votre chemin\PojetLaravel\database\database.sqlite
+DB_DATABASE=Votre chemin\PojetLaravel-master\database\database.sqlite
 #DB_USERNAME=homestead
 #DB_PASSWORD=secret
 ```
@@ -93,6 +88,9 @@ Si vous n'etes pas connecter, vous pouvez juste voir les commentaires présents 
 ### Le menu Contact : 
 
 Si vous etes enregistré dans notre base de données et que vous etes connecté, vous pouvez nous contactez en remplissant le formulaire de contact affiché, si vous envoyé votre message vous pouvez acceder à un tableau récaputilatif de tout les messages envoyés sous forme d'un tableau. Dans ce cas la table Contact sera mis à jours dans la base de donnée.
+### Le menu Help : 
+
+Ce menu vous dirige vers une assistance d'aide par téléphone ou par mail. Si vous choisissez le mode mail, vous serez dirigé vers la page de contact.
 
 ### Le menu Subscribe : 
 

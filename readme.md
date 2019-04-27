@@ -39,7 +39,17 @@ Copy .env.example .env
 ```
 Cp .env.example .env
 ```
-5- Ouvrez le fichier .env et changer le nom de la base de donnée
+5- Créez un fichier database.sqlite dans le répertoire database du projet récuperé
+
+5- Ouvrez le fichier .env et faites les modification suivantes.
+```
+DB_CONNECTION=sqlite
+#DB_HOST=127.0.0.1
+#DB_PORT=3306
+DB_DATABASE=Votre chemin\PojetLaravel\database\database.sqlite
+#DB_USERNAME=homestead
+#DB_PASSWORD=secret
+```
 6- Dans le Terminal/Invité de commande lancez la commande suivante 
 ```
 php artisan key:generate
@@ -56,27 +66,41 @@ php artisan migrate:fresh --seed -v
 ```
 php artisan serve
 ```
-Terminez avec un exemple d'extraction de données du système ou d'utilisation pour une petite démonstration.
+Vous pouvez maintenant tester notre application.
 
 ## Lancer les tests
 
-Expliquer comment exécuter les tests automatisés pour ce système
+Le blog contient en haut une barre de navigation contenant les menus suivant : Home, Articles, Contact, Help, Subscribe, Login
 
-### Décomposer en tests de bout en bout
+### Le menu Home :
 
-Expliquez ce que ces tests testent et pourquoi
+Affiche les quatres premiers Articles présents dans notre base de données. Vous pouvez acceder au contenu de l'Article en clicant sur 
+son lien, deux cas sont possibles : 
+Si vous etes connecter, vous pouvez modifer ou supprimer le contenu de l'article. Dans ce cas la table article sera mis à jours dans la base de donnée.
+Si vous n'etes pas connecté, vous pouvez acceder au contenu de l'article sans pouvoir le modifier ou le supprimer.
 
-`` `
-Donne un exemple
-`` `
+### Le menu Articles : 
 
-### Et tests de style de codage
+Affiche tout les Articles présents dans la base de données (dans notre cas 10 articles). 
+Si vous etes connecter, vous pouvez modifer ou supprimer le contenu de l'article. Dans ce cas la table article sera mis à jours dans la base de donnée. Vous pouvez acceder au contenu de l'Article en clicant sur son lien, deux cas sont possibles : 
+Si vous etes connecter, vous pouvez modifer ou supprimer le contenu de l'article. Dans ce cas la table article sera mis à jours dans la base de donnée.
+Si vous n'etes pas connecté, vous pouvez acceder au contenu de l'article sans pouvoir le modifier ou le supprimer.
 
-Expliquez ce que ces tests testent et pourquoi
+Pour les commentaire :
+Si vous etes connecter, vous pouvez commenter les articles en tapant votre nom, votre email, et votre commentaire.
+Si vous n'etes pas connecter, vous pouvez juste voir les commentaires présents en dessous de chaque article.
 
-`` `
-Donne un exemple
-`` `
+### Le menu Contact : 
+
+Si vous etes enregistré dans notre base de données et que vous etes connecté, vous pouvez nous contactez en remplissant le formulaire de contact affiché, si vous envoyé votre message vous pouvez acceder à un tableau récaputilatif de tout les messages envoyés sous forme d'un tableau. Dans ce cas la table Contact sera mis à jours dans la base de donnée.
+
+### Le menu Subscribe : 
+
+Permet de s'enregistrer si vous n'etes pas enregistrer sur notre base de donnée en remplissant un formulaire, dans ce cas la table users sera mis à jours dans la base de donnée.
+
+### Le Login : 
+
+Permet de se connecter pour pouvoir effectuer les opérations citées auparavant.
 
 ## Déploiement
 
@@ -98,16 +122,14 @@ Nous utilisons [SemVer] (http://semver.org/) pour la gestion des versions. Pour 
 
 ## Auteurs
 
-* ** Hamza DERDJINI ** - * Travail initial * - [Hamza] (https://www.linkedin.com/in/hamza-derdjini-b8a827122/)
+* **Hamza DERDJINI**  [LinkedinHamza](https://www.linkedin.com/in/hamza-derdjini-b8a827122/)
+                      [GithubHamza](https://github.com/geekhamza)
+* **Hocine YAKOUBI**  [GithubHocine](https://github.com/yakoubih)
 
-Voir aussi la liste des [contributeurs] (https://github.com/your/project/contributors) ayant participé à ce projet.
 
 ## Licence
 
-Ce projet est sous licence MIT - voir le fichier [LICENSE.md] (LICENSE.md) pour plus de détails.
-
+Ce projet est réalisé dans le cadre de la formation Laravel (Master 2 DCISS Grenoble) 
 ## Remerciements
 
-* Astuce de chapeau à toute personne dont le code a été utilisé
-* Inspiration
-* etc
+* On vous remercie pour vos explications

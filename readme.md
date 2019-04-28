@@ -92,8 +92,8 @@ Si vous n'etes pas connecté, vous pouvez accéder au contenu de l'article sans 
 
 Pour les commentaire :
 La table comments de la base de données contient par défaut 10 commentaires générés automatiquements.
-Si vous etes connecté, vous pouvez commenter les articles en tapant votre nom, votre email, et votre commentaire, dans ce cas le nombre de commentaire entre les parenthèses s'incrémente, et la table comments de la base de données sera mis à jour. 
-Si vous n'etes pas connecter, vous pouvez juste voir les commentaires présents en dessous de chaque article sans pouvoir commenter.
+Si vous etes connecté, vous pouvez commenter les articles en tapant votre nom, votre email, et votre commentaire, dans ce cas le nombre de commentaire entre les parenthèses s'incrémente, le commentaire ecris sera affiché au dessous de l'image correspondante à l'article et la table comments de la base de données sera mis à jour. 
+Si vous n'etes pas connecter, vous pouvez juste voir les commentaires présents en dessous de chaque image correspondante à l'article sans pouvoir commenter.
 
 
 ### Le menu Contact : 
@@ -124,7 +124,7 @@ Permet de se connecter pour pouvoir effectuer les opérations citées auparavant
 
 ## Licence
 
-Ce projet est réalisé dans le cadre de la formation Laravel (Master 2 DCISS Grenoble) 
+* Ce projet est réalisé dans le cadre de la formation Laravel (Master 2 DCISS Grenoble) 
 ## Remerciements
 
 * On vous remercie pour vos explications ainsi que votre cours complet.

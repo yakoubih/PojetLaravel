@@ -48,11 +48,11 @@
                         <!-- Authentication Links -->
                         @guest
                             <li class="nav-item" style="margin-right: 20px;">
-                                <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
+                                <a class="nav-link" href="{{ route('login') }}" style=" color: white;background-color: gray">{{ __('Login') }}</a>
                             </li>
                             @if (Route::has('register'))
-                                <li class="nav-item">
-                                    <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
+                                <li class="nav-item" style="background-color: gray">
+                                    <a class="nav-link" href="{{ route('register') }}" style="color: white; background-color: gray">{{ __('Register') }}</a>
                                 </li>
                             @endif
                         @else
@@ -91,6 +91,6 @@
 <script>
       $(document).foundation();
     </script>
-    <p><em>DERDJINI Hamza & YAKOUBI Hocine</em></p>
+ <p style="background-color: gray;color: white;width: 860px" class="container text-center"><em>DERDJINI Hamza & YAKOUBI Hocine</em></p>
 </body>
 </html>

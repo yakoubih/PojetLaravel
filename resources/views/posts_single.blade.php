@@ -15,9 +15,9 @@
    	<div class="row">
 		<div class="col-md-6 offset-md-3">	
 	   		@guest
-				<p><span style="font-weight: bold;">Author:</span>{{$post->author->name}}</p>
+				<p><span style="background-color: gray ; color: white ; text-align: center;font-size: 25px;width: 560px"> <span style="font-weight: bold;">Author:</span>{{$post->author->name}}</p>
 			@else
-				<p><span style="font-weight: bold;">Author:</span>{{$post->author->name}}</p>	
+				<p><span style="background-color: gray ; color: white ; text-align: center;font-size: 25px;width: 560px"> <span style="font-weight: bold;">Author:</span>{{$post->author->name}}</p>	
 	   		@endguest
    		</div>
    	</div>

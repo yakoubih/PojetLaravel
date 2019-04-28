@@ -13,6 +13,9 @@ De quoi avez-vous besoin pour installer le logiciel et comment l'installer?
 ```
 Vous devez avoir une version >= PHP 7.2.10
 ```
+```
+Vous devez avoir composer installé sur votre machine
+```
 
 ### Installation
 
@@ -36,7 +39,7 @@ copy .env.example .env
 ```
 5- Créez un fichier database.sqlite dans le répertoire database du projet récuperé
 
-6- Ouvrez le fichier .env et faites les modification suivantes.
+6- Ouvrez le fichier .env et faites les modifications suivantes.
 ```
 DB_CONNECTION=sqlite
 #DB_HOST=127.0.0.1
@@ -61,7 +64,13 @@ php artisan migrate:fresh --seed -v
 ```
 php artisan serve
 ```
-Vous pouvez maintenant tester notre application.
+11- Vous pouvez accéder au projet à l’url suivant:
+
+[Projet Laravel](http://localhost:8000)
+
+12- Vous pouvez accéder à la base de données à l’url suivant:
+
+[Base de données](http://127.0.0.1:8000/phpliteadmin.php)
 
 ## Lancer les tests
 
@@ -71,52 +80,41 @@ Le blog contient en haut une barre de navigation contenant les menus suivant : H
 
 Affiche les quatres premiers Articles présents dans notre base de données. Vous pouvez acceder au contenu de l'Article en clicant sur 
 son lien, deux cas sont possibles : 
-Si vous etes connecter, vous pouvez modifer ou supprimer le contenu de l'article. Dans ce cas la table article sera mis à jours dans la base de donnée.
-Si vous n'etes pas connecté, vous pouvez acceder au contenu de l'article sans pouvoir le modifier ou le supprimer.
+Si vous étes connecter, vous pouvez modifer ou supprimer le contenu de l'article. Dans ce cas la table article sera mis à jours dans la base de données.
+Si vous n'étes pas connecté, vous pouvez acceder au contenu de l'article sans pouvoir le modifier ou le supprimer.
 
 ### Le menu Articles : 
 
 Affiche tout les Articles présents dans la base de données (dans notre cas 10 articles). 
-Si vous etes connecter, vous pouvez modifer ou supprimer le contenu de l'article. Dans ce cas la table article sera mis à jours dans la base de donnée. Vous pouvez acceder au contenu de l'Article en clicant sur son lien, deux cas sont possibles : 
-Si vous etes connecter, vous pouvez modifer ou supprimer le contenu de l'article. Dans ce cas la table article sera mis à jours dans la base de donnée.
-Si vous n'etes pas connecté, vous pouvez acceder au contenu de l'article sans pouvoir le modifier ou le supprimer.
+Si vous étes connecté, vous pouvez modifier ou supprimer le contenu de l'article. Dans ce cas la table article sera mis à jours dans la base de données. Vous pouvez accéder au contenu de l'Article en clicant sur son lien, deux cas sont possibles : 
+Si vous etes connecter, vous pouvez modifier ou supprimer le contenu de l'article. Dans ce cas la table article sera mis à jours dans la base de données.
+Si vous n'etes pas connecté, vous pouvez accéder au contenu de l'article sans pouvoir le modifier ou le supprimer.
 
 Pour les commentaire :
-Si vous etes connecter, vous pouvez commenter les articles en tapant votre nom, votre email, et votre commentaire.
-Si vous n'etes pas connecter, vous pouvez juste voir les commentaires présents en dessous de chaque article.
+La table comments de la base de données contient par défaut 10 commentaires générés automatiquements.
+Si vous etes connecté, vous pouvez commenter les articles en tapant votre nom, votre email, et votre commentaire, dans ce cas le nombre de commentaire entre les parenthèses s'incrémente, et la table comments de la base de données sera mis à jour. 
+Si vous n'etes pas connecter, vous pouvez juste voir les commentaires présents en dessous de chaque article sans pouvoir commenter.
+
 
 ### Le menu Contact : 
 
-Si vous etes enregistré dans notre base de données et que vous etes connecté, vous pouvez nous contactez en remplissant le formulaire de contact affiché, si vous envoyé votre message vous pouvez acceder à un tableau récaputilatif de tout les messages envoyés sous forme d'un tableau. Dans ce cas la table Contact sera mis à jours dans la base de donnée.
+Si vous etes enregistré dans notre base de données et que vous etes connecté, vous pouvez nous contactez en remplissant le formulaire de contact affiché, si vous envoyé votre message vous pouvez acceder à un tableau récaputilatif de tout les messages envoyés sous forme d'un tableau. Dans ce cas la table Contact sera mis à jours dans la base de données.
 ### Le menu Help : 
 
-Ce menu vous dirige vers une assistance d'aide par téléphone ou par mail. Si vous choisissez le mode mail, vous serez dirigé vers la page de contact.
+Ce menu vous dirige vers une assistance d'aide par téléphone ou par mail. Si vous choisissez le mode mail, vous serez redirigé vers la page de contact.
 
 ### Le menu Subscribe : 
 
-Permet de s'enregistrer si vous n'etes pas enregistrer sur notre base de donnée en remplissant un formulaire, dans ce cas la table users sera mis à jours dans la base de donnée.
+Permet de s'enregistrer si vous n'etes pas enregistrer sur notre base de donnée en remplissant un formulaire, dans ce cas la table users sera mis à jours dans la base de données.
 
 ### Le Login : 
 
 Permet de se connecter pour pouvoir effectuer les opérations citées auparavant.
 
-## Déploiement
-
-Ajouter des notes supplémentaires sur la façon de déployer ceci sur un système actif
-
 ## Construit avec
 
-* [Dropwizard] (http://www.dropwizard.io/1.0.2/docs/) - Le cadre Web utilisé
-* [Maven] (https://maven.apache.org/) - Gestion des dépendances
-* [ROME] (https://rometools.github.io/rome/) - Utilisé pour générer des flux RSS
-
-## Contribuant
-
-Veuillez consulter [CONTRIBUTING.md] (https://gist.github.com/PurpleBooth/b24679402957c63ec426) pour obtenir des détails sur notre code de conduite et sur le processus de soumission des demandes d'extraction.
-
-## Versioning
-
-Nous utilisons [SemVer] (http://semver.org/) pour la gestion des versions. Pour les versions disponibles, voir les [balises sur ce référentiel] (https://github.com/your/project/tags).
+* [Laravel] (https://laravel.com/) - PHP framework
+* [Bootstrap] (https://getbootstrap.com/) - framework CSS
 
 ## Auteurs
 
@@ -124,10 +122,9 @@ Nous utilisons [SemVer] (http://semver.org/) pour la gestion des versions. Pour 
                       [GithubHamza](https://github.com/geekhamza)
 * **Hocine YAKOUBI**  [GithubHocine](https://github.com/yakoubih)
 
-
 ## Licence
 
 Ce projet est réalisé dans le cadre de la formation Laravel (Master 2 DCISS Grenoble) 
 ## Remerciements
 
-* On vous remercie pour vos explications
+* On vous remercie pour vos explications ainsi que votre cours complet.
